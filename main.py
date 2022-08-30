@@ -7,5 +7,6 @@ dotenv.load_dotenv()
 CLIENT = interactions.Client(token=os.environ.get('jet2botkey'))
 
 CLIENT.load("commands.uptime")
+CLIENT.load("commands.link")
 
 CLIENT.start()
