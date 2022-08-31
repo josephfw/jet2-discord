@@ -19,7 +19,7 @@ class uptime(interactions.Extension):
         await ctx.send(
             embeds = [
                 interactions.Embed(
-                    color = 0xe2231a,
+                    color = 0x2F3136,
                     fields = [
                         interactions.EmbedField(
                             name = 'Bot Uptime',
