@@ -10,7 +10,7 @@ async def command(context):
             interactions.Embed(
                 color = 0x2F3136,
                 author = interactions.EmbedAuthor(
-                    name = context.author.user.username,
+                    name = context.author.user.username + '#' + context.author.user.discriminator,
                     icon_url = context.author.user.avatar_url
                 ),
                 description = f'The `{context.data.name}` command has been executed in <#{context.channel.id}> by <@{context.author.id}>.'
