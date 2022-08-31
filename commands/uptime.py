@@ -1,6 +1,6 @@
 import interactions
 import time
-from functions import jfw
+from functions import jfw, log
 
 startTime = time.time()
 
@@ -30,6 +30,8 @@ class uptime(interactions.Extension):
             ],
             ephemeral = False
         )
+
+        await log.command(ctx)
 
 def setup(client):
     uptime(client)

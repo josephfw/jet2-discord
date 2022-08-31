@@ -1,6 +1,6 @@
 import interactions
 from interactions.ext.wait_for import wait_for
-from functions import get
+from functions import get, log
 import asyncio
 
 class announce(interactions.Extension):
@@ -131,6 +131,8 @@ class announce(interactions.Extension):
                         )
                     ]
                 )
+
+        await log.command(ctx)
 
 def setup(client):
     announce(client)
