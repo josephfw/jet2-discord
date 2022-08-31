@@ -1,3 +1,5 @@
 discord-py-interactions
 python-dotenv
 requests
+interactions-wait-for
+asyncio
