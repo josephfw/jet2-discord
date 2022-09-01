@@ -7,8 +7,8 @@ dotenv.load_dotenv()
 
 CLIENT = interactions.Client(token=os.environ.get('key'), intents=interactions.Intents.DEFAULT | interactions.Intents.GUILD_MESSAGE_CONTENT)
 
-CLIENT.load("commands.uptime")
-CLIENT.load("commands.announce")
+CLIENT.load("commands.misc.uptime")
+CLIENT.load("commands.misc.announce")
 
 setup(CLIENT)
 CLIENT.start()
